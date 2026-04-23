@@ -20,39 +20,42 @@ const Hero = () => {
 
         <Spotlight className='top-28 left-80 h-[80vh] w-[50vw]' fill='blue' />
 
-        <div className='absolute top-0 left-0 flex h-screen w-full items-center justify-center bg-white dark:bg-black-100'>
-          <div
-            className={cn(
-              'absolute inset-0',
-              'bg-size-[40px_40px]',
-              'bg-[linear-gradient(to_right,#e4e4e7_1px,transparent_1px),linear-gradient(to_bottom,#e4e4e7_1px,transparent_1px)]',
-              'dark:bg-[linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]',
-            )}
-          />
-          {/* Radial gradient for the container to give a faded look */}
-          <div className='pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black'></div>
-        </div>
-
-        <div className='flex flex-col justify-center items-center z-20 relative my-20'>
-          <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center'>
-            <h2 className='uppercase tracking-widest text-xs text-center max-w-80'>
-              Dynamic Web Magic with Next.js
-            </h2>
-
-            <TextGenerateEffect
-              className='text-center text-[40px] md:text-5xl lg:text-6xl'
-              words='Transforming Concepts into Seamless User Experiences'
+        <div className='relative w-full'>
+          <div className='absolute top-0 left-0 flex h-full w-full items-center justify-center bg-white dark:bg-black-100'>
+            <div
+              className={cn(
+                'absolute inset-0',
+                'bg-size-[40px_40px]',
+                'bg-[linear-gradient(to_right,#e4e4e7_1px,transparent_1px),linear-gradient(to_bottom,#e4e4e7_1px,transparent_1px)]',
+                'dark:bg-[linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]',
+              )}
             />
-
-            <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>
-              Hi, I&apos;m Zuhayb, a Fullstack web developer based in Somaliland
-            </p>
+            {/* Radial gradient for the container to give a faded look */}
+            <div className='pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_10%,black)] dark:bg-black-100'></div>
           </div>
-          <MagicButton
-            title='Show my Work'
-            icon={<FaLocationArrow />}
-            position='right'
-          />
+
+          <div className='flex flex-col justify-center items-center z-20 relative my-20'>
+            <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center'>
+              <h2 className='uppercase tracking-widest text-xs text-center max-w-80'>
+                Dynamic Web Magic with Next.js
+              </h2>
+
+              <TextGenerateEffect
+                className='text-center text-[40px] md:text-5xl lg:text-6xl'
+                words='Transforming Concepts into Seamless User Experiences'
+              />
+
+              <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>
+                Hi, I&apos;m Zuhayb, a Fullstack web developer based in
+                Somaliland
+              </p>
+            </div>
+            <MagicButton
+              title='Show my Work'
+              icon={<FaLocationArrow />}
+              position='right'
+            />
+          </div>
         </div>
       </div>
     </>
