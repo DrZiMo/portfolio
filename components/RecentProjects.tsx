@@ -77,7 +77,7 @@ const RecentProjects = () => {
                         className='flex items-center gap-2 bg-[#161A31] hover:bg-[#1d2245] transition px-5 py-2.5 rounded-lg border border-white/10'
                       >
                         <span className='text-sm md:text-base'>GitHub</span>
-                        <FaGithub />
+                        <FaGithub className='text-purple' />
                       </a>
                     )}
                   </div>

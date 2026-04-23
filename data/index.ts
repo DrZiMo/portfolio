@@ -73,7 +73,7 @@ export const projects = [
     img: ['/p4.svg', '/p3.svg'],
     iconLists: ['/next.svg', '/tail.svg', '/ts.svg', '/three.svg', '/gsap.svg'],
     link: '/ui.apple.com',
-    github: '',
+    github: 'asdlkasjdl',
   },
 ]
 
