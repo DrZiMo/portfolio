@@ -12,6 +12,7 @@ import {
 import ProjectCard from './ProjectCard'
 import { ImageGallery } from './ImageGallery'
 import TailwindConnectButton from './TailwindConnectButton'
+import Link from 'next/link'
 
 const RecentProjects = () => {
   return (
@@ -84,8 +85,10 @@ const RecentProjects = () => {
           </Dialog>
         ))}
       </div>
-      <div className='flex justify-center'>
-        <TailwindConnectButton text='See more' />
+      <div className='flex justify-center lg:mt-10'>
+        <Link href={'/projects'}>
+          <TailwindConnectButton text='See more' />
+        </Link>
       </div>
     </div>
   )
