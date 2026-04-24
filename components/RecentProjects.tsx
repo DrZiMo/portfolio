@@ -85,7 +85,7 @@ const RecentProjects = () => {
           </Dialog>
         ))}
       </div>
-      <div className='flex justify-center lg:mt-10'>
+      <div className='flex justify-center mt-10'>
         <Link href={'/projects'}>
           <TailwindConnectButton text='See more' />
         </Link>
