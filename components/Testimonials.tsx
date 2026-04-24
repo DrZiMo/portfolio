@@ -4,7 +4,7 @@ import { InfiniteMovingCards } from './ui/infinite-moving-cards'
 
 const Testimonials = () => {
   return (
-    <div className='py-20'>
+    <section className='py-20' id='testimonials'>
       <Heading text={'What people say about'} subText={'my work'} />
       <div className='mt-10'>
         <InfiniteMovingCards
@@ -13,7 +13,7 @@ const Testimonials = () => {
           speed='slow'
         />
       </div>
-    </div>
+    </section>
   )
 }
 

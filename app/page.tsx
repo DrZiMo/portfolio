@@ -4,6 +4,7 @@ import RecentProjects from '@/components/RecentProjects'
 import MarqueeTechStack from '@/components/shadcn-space/marquee/marquee-02'
 import Testimonials from '@/components/Testimonials'
 import { FloatingNav } from '@/components/ui/floating-navbar'
+import WorkExperience from '@/components/WorkExperience'
 import { navItems } from '@/data'
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
         <MarqueeTechStack />
         <RecentProjects />
         <Testimonials />
+        <WorkExperience />
       </div>
     </main>
   )

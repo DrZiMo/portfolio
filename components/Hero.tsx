@@ -34,7 +34,7 @@ const Hero = () => {
             <div className='pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_10%,black)] dark:bg-black-100'></div>
           </div>
 
-          <div className='flex flex-col justify-center items-center z-20 relative my-20'>
+          <div className='flex flex-col justify-center items-center z-20 relative mt-32 mb-20'>
             <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center'>
               <h2 className='uppercase tracking-widest text-xs text-center max-w-80'>
                 Dynamic Web Magic with Next.js
