@@ -6,7 +6,7 @@ import { GlowingEffect } from './ui/glowing-effect'
 
 const WorkExperience = () => {
   return (
-    <section id='experience' className='py-20'>
+    <section id='experience' className='pt-20'>
       <Heading text={'Here are'} subText={'my work experience'} />
 
       <TracingBeam className='px-6 h-full mt-10'>

@@ -1,5 +1,6 @@
 import Grid from '@/components/Grid'
 import Hero from '@/components/Hero'
+import ReadyToTalk from '@/components/ReadyToTalk'
 import RecentProjects from '@/components/RecentProjects'
 import MarqueeTechStack from '@/components/shadcn-space/marquee/marquee-02'
 import Testimonials from '@/components/Testimonials'
@@ -18,6 +19,12 @@ export default function Home() {
         <RecentProjects />
         <Testimonials />
         <WorkExperience />
+        <div className='relative w-full'>
+          <div className='w-full absolute -top-10 left-0'>
+            <img src='/pattern.png' alt='pattern' />
+          </div>
+          <ReadyToTalk />
+        </div>
       </div>
     </main>
   )
