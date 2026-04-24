@@ -25,7 +25,7 @@ const RecentProjects = () => {
               <ProjectCard item={item} />
             </DialogTrigger>
 
-            <DialogContent className='bg-black-100 border border-white/10 text-white max-w-5xl w-[90%] rounded-2xl p-6'>
+            <DialogContent className='bg-black-100 border border-white/10 text-white max-w-7xl w-[90%] rounded-2xl p-6'>
               <div className='flex flex-col md:flex-row gap-6'>
                 <ImageGallery images={item.img} />
 
@@ -56,9 +56,7 @@ const RecentProjects = () => {
                     </div>
                   </div>
 
-                  {/* ACTIONS */}
                   <div className='flex flex-wrap gap-4 mt-8'>
-                    {/* LIVE LINK */}
                     {item.link && (
                       <a
                         href={item.link}
