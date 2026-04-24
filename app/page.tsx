@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer'
 import Grid from '@/components/Grid'
 import Hero from '@/components/Hero'
 import ReadyToTalk from '@/components/ReadyToTalk'
@@ -19,11 +20,12 @@ export default function Home() {
         <RecentProjects />
         <Testimonials />
         <WorkExperience />
-        <div className='relative w-full'>
-          <div className='w-full absolute -top-10 left-0'>
-            <img src='/pattern.png' alt='pattern' />
+        <div className='relative w-full overflow-hidden'>
+          <div className='w-full absolute top-20 md:-top-50 left-0'>
+            <img src='/pattern.png' alt='pattern' className='h-full' />
           </div>
           <ReadyToTalk />
+          <Footer />
         </div>
       </div>
     </main>

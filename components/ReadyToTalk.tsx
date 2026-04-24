@@ -5,7 +5,7 @@ import Link from 'next/link'
 const ReadyToTalk = () => {
   return (
     <div className='pb-20 pt-40'>
-      <div className='font-bold text-4xl md:text-5xl text-center w-[50%] mx-auto'>
+      <div className='font-bold text-4xl md:text-5xl text-center w-full md:w-[50%] mx-auto'>
         Ready to talk your <span className='text-purple'>digital presence</span>{' '}
         to the next level?
       </div>
@@ -14,7 +14,7 @@ const ReadyToTalk = () => {
         your goals.
       </div>
 
-      <div className='flex justify-center items-center'>
+      <div className='flex justify-center items-center mt-5 md:mt-0'>
         <Link href={''} className='w-fit h-fit p-0'>
           <MagicButton
             title='Contact me now'
