@@ -1,6 +1,5 @@
 import { projects } from '@/data'
 import Heading from './Heading'
-import { PinContainer } from './ui/pin'
 import { FaGithub, FaLocationArrow } from 'react-icons/fa'
 import {
   Dialog,
