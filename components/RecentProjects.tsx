@@ -12,6 +12,7 @@ import {
 } from './ui/dialog'
 import ProjectCard from './ProjectCard'
 import { ImageGallery } from './ImageGallery'
+import TailwindConnectButton from './TailwindConnectButton'
 
 const RecentProjects = () => {
   return (
@@ -19,7 +20,7 @@ const RecentProjects = () => {
       <Heading text={'A small selection of'} subText={'recent projects'} />
 
       <div className='flex flex-wrap items-baseline-last justify-center p-4 gap-16 mt-10'>
-        {projects.map((item) => (
+        {projects.slice(0, 4).map((item) => (
           <Dialog key={item.id}>
             <DialogTrigger className='text-left'>
               <ProjectCard item={item} />
@@ -29,7 +30,6 @@ const RecentProjects = () => {
               <div className='flex flex-col md:flex-row gap-6'>
                 <ImageGallery images={item.img} />
 
-                {/* RIGHT: INFO */}
                 <div className='flex flex-col flex-1'>
                   <DialogHeader className='space-y-3'>
                     <DialogTitle className='text-2xl md:text-3xl font-bold'>
@@ -84,6 +84,9 @@ const RecentProjects = () => {
             </DialogContent>
           </Dialog>
         ))}
+      </div>
+      <div className='flex justify-center'>
+        <TailwindConnectButton text='See more' />
       </div>
     </div>
   )
