@@ -16,7 +16,7 @@ import Link from 'next/link'
 
 const RecentProjects = () => {
   return (
-    <div className='py-20'>
+    <section className='py-20' id='projects'>
       <Heading text={'A small selection of'} subText={'recent projects'} />
 
       <div className='flex flex-wrap items-baseline-last justify-center p-4 gap-16 mt-10'>
@@ -90,7 +90,7 @@ const RecentProjects = () => {
           <TailwindConnectButton text='See more' />
         </Link>
       </div>
-    </div>
+    </section>
   )
 }
 

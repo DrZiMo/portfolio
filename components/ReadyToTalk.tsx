@@ -15,7 +15,7 @@ import SocialMediaFooter from './SocialMediaFooter'
 // TODO: make the email work
 const ReadyToTalk = () => {
   return (
-    <div className='pb-20 pt-40'>
+    <section className='pb-20 pt-40' id='contact'>
       <div className='font-bold text-4xl md:text-5xl text-center w-full md:w-[50%] mx-auto'>
         Ready to talk your <span className='text-purple'>digital presence</span>{' '}
         to the next level?
@@ -117,7 +117,7 @@ const ReadyToTalk = () => {
           </DialogContent>
         </Dialog>
       </div>
-    </div>
+    </section>
   )
 }
 

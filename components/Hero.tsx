@@ -3,6 +3,7 @@ import { cn } from '@/lib/utils'
 import { TextGenerateEffect } from './ui/text-generate-effect'
 import MagicButton from './MagicButton'
 import { FaLocationArrow } from 'react-icons/fa'
+import Link from 'next/link'
 
 const Hero = () => {
   return (
@@ -50,11 +51,13 @@ const Hero = () => {
                 Somaliland
               </p>
             </div>
-            <MagicButton
-              title='Show my Work'
-              icon={<FaLocationArrow />}
-              position='right'
-            />
+            <Link href={'#projects'}>
+              <MagicButton
+                title='Show my Work'
+                icon={<FaLocationArrow />}
+                position='right'
+              />
+            </Link>
           </div>
         </div>
       </div>
