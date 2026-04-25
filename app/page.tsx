@@ -18,7 +18,7 @@ export default function Home() {
         <Grid />
         <MarqueeTechStack />
         <RecentProjects />
-        <Testimonials />
+        <Testimonials />z
         <WorkExperience />
         <div className='relative w-full overflow-hidden'>
           <div className='w-full absolute top-20 md:-top-50 left-0'>

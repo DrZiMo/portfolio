@@ -12,6 +12,7 @@ import {
 import { socialMedia } from '@/data'
 import SocialMediaFooter from './SocialMediaFooter'
 
+// TODO: make the email work
 const ReadyToTalk = () => {
   return (
     <div className='pb-20 pt-40'>
