@@ -1,3 +1,5 @@
+import { FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa'
+
 export const navItems = [
   { name: 'About', link: '#about' },
   { name: 'Projects', link: '#projects' },
@@ -246,3 +248,21 @@ export const workExperience = [
     date: 'March 2023 - Present',
   },
 ]
+
+export const socialMedia = [
+    {
+      id: 1,
+      icon: <FaGithub />,
+      link: 'https://github.com/DrZiMo',
+    },
+    {
+      id: 2,
+      icon: <FaLinkedin />,
+      link: 'https://www.linkedin.com/in/suhayb-faysal',
+    },
+    {
+      id: 3,
+      icon: <FaWhatsapp />,
+      link: '',
+    },
+  ]

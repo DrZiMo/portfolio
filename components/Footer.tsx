@@ -1,26 +1,8 @@
+import { socialMedia } from '@/data'
 import SocialMediaFooter from './SocialMediaFooter'
-import { FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa'
 import Link from 'next/link'
 
 const Footer = () => {
-  const socialMedia = [
-    {
-      id: 1,
-      icon: <FaGithub />,
-      link: 'https://github.com/DrZiMo',
-    },
-    {
-      id: 2,
-      icon: <FaLinkedin />,
-      link: 'https://www.linkedin.com/in/suhayb-faysal',
-    },
-    {
-      id: 3,
-      icon: <FaWhatsapp />,
-      link: '',
-    },
-  ]
-
   return (
     <div className='py-10 flex flex-col md:flex-row justify-between items-center'>
       <div className='text-sm text-white-100'>
