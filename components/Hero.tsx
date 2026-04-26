@@ -6,6 +6,7 @@ import { FaLocationArrow } from 'react-icons/fa'
 import Link from 'next/link'
 import SocialMediaFooter from './SocialMediaFooter'
 import { socialMedia } from '@/data'
+import GradientButton from './GradientButton'
 
 const Hero = () => {
   return (
@@ -39,7 +40,7 @@ const Hero = () => {
 
           <div className='flex flex-col md:flex-row justify-between items-center md:items-start h-full'>
             <div className='flex flex-col justify-center h-fit z-20 relative mt-28 mb-20 max-w-full md:max-w-[80%] lg:max-w-[55%]'>
-              <div className='flex flex-col'>
+              <div className='flex flex-col items-center md:items-start'>
                 <h2 className='uppercase tracking-widest text-center md:text-left text-xs max-w-80'>
                   Scalable Fullstack Development
                 </h2>
@@ -50,7 +51,7 @@ const Hero = () => {
                 />
 
                 <p className='md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl text-white-100 text-center md:text-left'>
-                  Hi, I&apos;m Zuhayb, a Fullstack web developer based in
+                  Hi, I&apos;m Suhayb Faysal, a Fullstack web developer based in
                   Somaliland
                 </p>
               </div>
@@ -66,13 +67,16 @@ const Hero = () => {
                   </Link>
                 ))}
               </div>
-              <div className='w-full flex justify-center md:justify-start'>
+              <div className='w-full flex justify-center md:gap-4 flex-col md:flex-row md:justify-start'>
                 <Link href={'#projects'}>
                   <MagicButton
                     title='Show my Work'
                     icon={<FaLocationArrow />}
                     position='right'
                   />
+                </Link>
+                <Link href='/cv.pdf' download>
+                  <GradientButton title='Download Resume' />
                 </Link>
               </div>
             </div>
