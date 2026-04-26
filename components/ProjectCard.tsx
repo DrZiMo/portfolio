@@ -1,5 +1,3 @@
-import React from 'react'
-import { FaLocationArrow } from 'react-icons/fa'
 import { PinContainer } from './ui/pin'
 
 import { projects } from '@/data'
@@ -18,7 +16,11 @@ const ProjectCard = ({ item }: { item: (typeof projects)[number] }) => {
           >
             <img src='/bg.png' alt='bgimg' />
           </div>
-          <img src={item.img} alt='cover' className='z-10 absolute bottom-0' />
+          <img
+            src={item.img[0]}
+            alt='cover'
+            className='z-10 absolute bottom-0'
+          />
         </div>
 
         <h1 className='font-bold lg:text-2xl md:text-xl text-base line-clamp-1'>

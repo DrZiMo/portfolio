@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import {
   motion,
   AnimatePresence,
@@ -22,43 +22,53 @@ export const FloatingNav = ({
 }) => {
   const { scrollYProgress } = useScroll()
 
-  // set true for the initial state so that nav bar is visible in the hero section
-  const [visible, setVisible] = useState(false)
+  const [visible, setVisible] = useState(true)
+
+  // 👇 store timeout reference
+  const idleTimeout = useRef<NodeJS.Timeout | null>(null)
 
   useMotionValueEvent(scrollYProgress, 'change', (current) => {
-    // Check if current is not undefined and is a number
-    if (typeof current === 'number') {
-      const direction = current! - scrollYProgress.getPrevious()!
+    if (typeof current !== 'number') return
 
-      if (scrollYProgress.get() < 0.05) {
-        // also set true for the initial state
-        setVisible(true)
+    const prev = scrollYProgress.getPrevious() || 0
+    const direction = current - prev
+
+    // 🧠 CLEAR previous timer on every scroll
+    if (idleTimeout.current) {
+      clearTimeout(idleTimeout.current)
+    }
+
+    // 🚀 SHOW / HIDE based on scroll direction
+    if (scrollYProgress.get() < 0.05) {
+      setVisible(true)
+    } else {
+      if (direction < 0) {
+        setVisible(true) // scrolling up
       } else {
-        if (direction < 0) {
-          setVisible(true)
-        } else {
-          setVisible(false)
-        }
+        setVisible(false) // scrolling down
       }
     }
+
+    // ⏳ START idle timer (2 seconds)
+    idleTimeout.current = setTimeout(() => {
+      // if user is near top and hasn't scrolled → hide nav
+      if (scrollYProgress.get() < 0.05) {
+        setVisible(false)
+      }
+    }, 2000)
   })
 
   return (
     <AnimatePresence mode='wait'>
       <motion.div
-        initial={{
-          opacity: 1,
-          y: -100,
-        }}
+        initial={{ opacity: 1, y: -100 }}
         animate={{
           y: visible ? 0 : -100,
           opacity: visible ? 1 : 0,
         }}
-        transition={{
-          duration: 0.2,
-        }}
+        transition={{ duration: 0.2 }}
         className={cn(
-          'flex max-w-fit md:min-w-[70vw] lg:min-w-fit fixed z-49 top-10 inset-x-0 mx-auto px-10 py-5 rounded-lg border border-black/.1 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] items-center justify-center space-x-4',
+          'flex max-w-fit md:min-w-[70vw] lg:min-w-fit fixed z-49 top-7 inset-x-0 mx-auto px-10 py-5 rounded-lg border border-black/.1 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] items-center justify-center space-x-4',
           className,
         )}
         style={{
@@ -72,12 +82,10 @@ export const FloatingNav = ({
           <Link
             key={`link=${idx}`}
             href={navItem.link}
-            className={cn(
-              'relative dark:text-neutral-50 items-center  flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500',
-            )}
+            className='relative dark:text-neutral-50 flex items-center space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500'
           >
             <span className='block sm:hidden'>{navItem.icon}</span>
-            <span className=' text-sm cursor-pointer!'>{navItem.name}</span>
+            <span className='text-sm cursor-pointer'>{navItem.name}</span>
           </Link>
         ))}
       </motion.div>

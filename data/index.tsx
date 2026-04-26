@@ -16,7 +16,6 @@ export const gridItems = [
     imgClassName: 'w-full h-full',
     titleClassName: 'justify-end',
     img: '/b1.svg',
-    spareImg: '',
   },
   {
     id: 2,
@@ -26,7 +25,6 @@ export const gridItems = [
     imgClassName: 'absolute bottom-0',
     titleClassName: 'justify-start',
     img: '/globe.png',
-    spareImg: '',
   },
   {
     id: 3,
@@ -36,7 +34,6 @@ export const gridItems = [
     imgClassName: '',
     titleClassName: 'justify-center md:max-w-full max-w-60 text-center',
     img: '',
-    spareImg: '',
   },
 ]
 
@@ -250,19 +247,19 @@ export const workExperience = [
 ]
 
 export const socialMedia = [
-    {
-      id: 1,
-      icon: <FaGithub />,
-      link: 'https://github.com/DrZiMo',
-    },
-    {
-      id: 2,
-      icon: <FaLinkedin />,
-      link: 'https://www.linkedin.com/in/suhayb-faysal',
-    },
-    {
-      id: 3,
-      icon: <FaWhatsapp />,
-      link: '',
-    },
-  ]
+  {
+    id: 1,
+    icon: <FaGithub />,
+    link: 'https://github.com/DrZiMo',
+  },
+  {
+    id: 2,
+    icon: <FaLinkedin />,
+    link: 'https://www.linkedin.com/in/suhayb-faysal',
+  },
+  {
+    id: 3,
+    icon: <FaWhatsapp />,
+    link: '',
+  },
+]
