@@ -37,7 +37,7 @@ const ReadyToTalk = () => {
             </Link>
           </DialogTrigger>
 
-          <DialogContent className='bg-black-100 border border-white/10 text-white max-w-2xl w-[90%] rounded-2xl p-8'>
+          <DialogContent className='bg-black-100 border border-white/10 text-white max-w-2xl w-[90%] rounded-2xl p-8 max-h-[90vh] overflow-y-auto'>
             <div className='flex flex-col gap-6'>
               {/* HEADER */}
               <DialogHeader className='space-y-2 text-center'>
