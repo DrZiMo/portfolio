@@ -39,34 +39,74 @@ export const gridItems = [
 
 export const brandList = [
   {
-    image: 'https://images.shadcnspace.com/assets/brand-logo/logoipsum-1.svg',
-    lightimg:
-      'https://images.shadcnspace.com/assets/brand-logo/logoipsum-light-1.svg',
-    name: 'Brand 1',
+    image: 'https://go.dev/blog/go-brand/Go-Logo/SVG/Go-Logo_Blue.svg',
+    lightimg: 'https://www.svgrepo.com/show/452214/go.svg',
+    name: 'Golang',
   },
   {
     image: 'https://images.shadcnspace.com/assets/brand-logo/logoipsum-2.svg',
-    lightimg:
-      'https://images.shadcnspace.com/assets/brand-logo/logoipsum-light-2.svg',
-    name: 'Brand 2',
+    lightimg: 'https://www.svgrepo.com/show/378837/node.svg',
+    name: 'Nodejs',
+  },
+  {
+    image: 'https://images.shadcnspace.com/assets/brand-logo/logoipsum-2.svg',
+    lightimg: 'https://www.svgrepo.com/show/349540/typescript.svg',
+    name: 'TypeScript',
   },
   {
     image: 'https://images.shadcnspace.com/assets/brand-logo/logoipsum-3.svg',
-    lightimg:
-      'https://images.shadcnspace.com/assets/brand-logo/logoipsum-light-3.svg',
-    name: 'Brand 3',
+    lightimg: 'https://www.svgrepo.com/show/452092/react.svg',
+    name: 'Reactjs',
   },
   {
-    image: 'https://images.shadcnspace.com/assets/brand-logo/logoipsum-4.svg',
-    lightimg:
-      'https://images.shadcnspace.com/assets/brand-logo/logoipsum-light-4.svg',
-    name: 'Brand 4',
+    image: 'https://images.shadcnspace.com/assets/brand-logo/logoipsum-3.svg',
+    lightimg: '/nextjs-icon-svgrepo-com.svg',
+    name: 'Nextjs',
   },
   {
     image: 'https://images.shadcnspace.com/assets/brand-logo/logoipsum-5.svg',
-    lightimg:
-      'https://images.shadcnspace.com/assets/brand-logo/logoipsum-light-5.svg',
-    name: 'Brand 5',
+    lightimg: 'https://www.svgrepo.com/show/374118/tailwind.svg',
+    name: 'Tailwind CSS',
+  },
+  {
+    image: 'https://images.shadcnspace.com/assets/brand-logo/logoipsum-4.svg',
+    lightimg: 'https://www.svgrepo.com/show/452093/redux.svg',
+    name: 'Redux',
+  },
+  {
+    image: 'https://images.shadcnspace.com/assets/brand-logo/logoipsum-5.svg',
+    lightimg: 'https://www.svgrepo.com/show/452091/python.svg',
+    name: 'Python',
+  },
+  {
+    image: 'https://images.shadcnspace.com/assets/brand-logo/logoipsum-5.svg',
+    lightimg: 'https://www.svgrepo.com/show/373845/mongo.svg',
+    name: 'MongoDB',
+  },
+  {
+    image: 'https://images.shadcnspace.com/assets/brand-logo/logoipsum-5.svg',
+    lightimg: 'https://www.svgrepo.com/show/354200/postgresql.svg',
+    name: 'postgreSQL',
+  },
+  {
+    image: 'https://images.shadcnspace.com/assets/brand-logo/logoipsum-5.svg',
+    lightimg: 'https://www.svgrepo.com/show/354202/postman-icon.svg',
+    name: 'Postman',
+  },
+  {
+    image: 'https://images.shadcnspace.com/assets/brand-logo/logoipsum-5.svg',
+    lightimg: 'https://www.svgrepo.com/show/452228/html-5.svg',
+    name: 'HTML5',
+  },
+  {
+    image: 'https://images.shadcnspace.com/assets/brand-logo/logoipsum-5.svg',
+    lightimg: 'https://www.svgrepo.com/show/452185/css-3.svg',
+    name: 'CSS3',
+  },
+  {
+    image: 'https://images.shadcnspace.com/assets/brand-logo/logoipsum-5.svg',
+    lightimg: '/cloudinary-svgrepo-com.svg',
+    name: 'Cloudinary',
   },
 ]
 

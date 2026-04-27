@@ -36,7 +36,6 @@ export const BentoGridItem = ({
   id,
   title,
   description,
-  //   remove unecessary things here
   img,
   imgClassName,
   titleClassName,
@@ -128,13 +127,15 @@ export const BentoGridItem = ({
                 <Lottie options={defaultOptions} height={200} width={400} />
               </div>
 
-              <MagicButton
-                title={copied ? 'Email is Copied!' : 'Copy my email address'}
-                icon={<IoCopyOutline />}
-                position='left'
-                handleClick={handleCopy}
-                otherClasses='!bg-[#161A31]'
-              />
+              <div className='mt-10'>
+                <MagicButton
+                  title={copied ? 'Email is Copied!' : 'Copy my email address'}
+                  icon={<IoCopyOutline />}
+                  position='left'
+                  handleClick={handleCopy}
+                  otherClasses='!bg-[#161A31]'
+                />
+              </div>
             </div>
           )}
         </div>

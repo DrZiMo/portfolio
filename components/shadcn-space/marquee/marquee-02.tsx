@@ -10,12 +10,12 @@ export default function MarqueeTechStack() {
             <img
               src={brand.image}
               alt={brand.name}
-              className='w-36 h-8 mr-6 lg:mr-20 dark:hidden'
+              className='w-36 h-8 mr-6 lg:mr-15 dark:hidden'
             />
             <img
               src={brand.lightimg}
               alt={brand.name}
-              className='hidden dark:block w-36 h-8 mr-12 lg:mr-20'
+              className='hidden dark:block w-32 h-10 mr-7 lg:mr-15'
             />
           </div>
         ))}
