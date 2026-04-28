@@ -26,17 +26,20 @@ const RecentProjects = () => {
               <ProjectCard item={item} />
             </DialogTrigger>
 
-            <DialogContent className='bg-black-100 border border-white/10 text-white max-w-7xl w-[90%] rounded-2xl p-6'>
-              <div className='flex flex-col md:flex-row gap-6'>
-                <ImageGallery images={item.img} />
+            <DialogContent className='bg-black-100 border border-white/10 text-white lg:max-w-7xl w-[90vw] rounded-2xl p-6 max-h-[90vh]'>
+              <div className='flex flex-col lg:flex-row gap-6 w-[calc(90vw-48px)] lg:w-full min-h-0'>
+                <ImageGallery
+                  images={item.img}
+                  contain={item.imageContain ? item.imageContain : false}
+                />
 
-                <div className='flex flex-col flex-1'>
-                  <DialogHeader className='space-y-3'>
+                <div className='flex flex-col min-w-0 lg:w-full'>
+                  <DialogHeader className='space-y-3 w-full'>
                     <DialogTitle className='text-2xl md:text-3xl font-bold'>
                       {item.title}
                     </DialogTitle>
 
-                    <DialogDescription className='text-sub-text text-base leading-relaxed'>
+                    <DialogDescription className='text-base leading-relaxed text-wrap lg:max-w-[60%]'>
                       {item.des}
                     </DialogDescription>
                   </DialogHeader>
