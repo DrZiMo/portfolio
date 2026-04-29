@@ -10,6 +10,7 @@ import {
   DialogTrigger,
 } from '@/components/ui/dialog'
 import { projects } from '@/data'
+import { SVGs } from '@/data/svgs'
 import Link from 'next/link'
 import { FaAngleLeft, FaGithub, FaLocationArrow } from 'react-icons/fa'
 
@@ -57,7 +58,7 @@ const page = () => {
                         {item.iconLists.map((icon, index) => (
                           <img
                             key={index}
-                            src={icon}
+                            src={SVGs[icon]}
                             className='w-6 h-6 opacity-80 hover:opacity-100 transition'
                           />
                         ))}
