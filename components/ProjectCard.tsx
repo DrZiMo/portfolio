@@ -1,13 +1,11 @@
+import { SVGs } from '@/data/svgs'
 import { PinContainer } from './ui/pin'
 
 import { projects } from '@/data'
 
 const ProjectCard = ({ item }: { item: (typeof projects)[number] }) => {
   return (
-    <div
-      className='lg:min-h-130 h-100 flex items-center justify-center sm:w-96 w-[80vw]'
-      key={item.id}
-    >
+    <div className='lg:min-h-130 h-100 flex items-center justify-center sm:w-96 w-[80vw]'>
       <PinContainer>
         <div className='relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10'>
           <div
@@ -47,7 +45,7 @@ const ProjectCard = ({ item }: { item: (typeof projects)[number] }) => {
                   transform: `translateX(-${5 * index + 2}px)`,
                 }}
               >
-                <img src={icon} alt='icon5' className='p-2' />
+                <img src={SVGs[icon]} alt={icon} className='p-2' />
               </div>
             ))}
           </div>

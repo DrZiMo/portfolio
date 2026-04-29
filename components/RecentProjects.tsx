@@ -13,6 +13,7 @@ import ProjectCard from './ProjectCard'
 import { ImageGallery } from './ImageGallery'
 import TailwindConnectButton from './TailwindConnectButton'
 import Link from 'next/link'
+import { SVGs } from '@/data/svgs'
 
 const RecentProjects = () => {
   return (
@@ -20,8 +21,8 @@ const RecentProjects = () => {
       <Heading text={'A small selection of'} subText={'recent projects'} />
 
       <div className='flex flex-wrap items-baseline-last justify-center p-4 gap-16 mt-10'>
-        {projects.slice(0, 4).map((item) => (
-          <Dialog key={item.id}>
+        {projects.slice(0, 4).map((item, index) => (
+          <Dialog key={index}>
             <DialogTrigger className='text-left'>
               <ProjectCard item={item} />
             </DialogTrigger>
@@ -52,7 +53,8 @@ const RecentProjects = () => {
                       {item.iconLists.map((icon, index) => (
                         <img
                           key={index}
-                          src={icon}
+                          src={SVGs[icon]}
+                          alt={icon}
                           className='w-6 h-6 opacity-80 hover:opacity-100 transition'
                         />
                       ))}

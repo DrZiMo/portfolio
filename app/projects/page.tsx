@@ -28,15 +28,15 @@ const page = () => {
         <Heading text='Here are' subText='my projects' />
 
         <div className='flex flex-wrap items-baseline-last justify-center p-4 gap-16 mt-10'>
-          {projects.map((item) => (
-            <Dialog key={item.id}>
+          {projects.map((item, index) => (
+            <Dialog key={index}>
               <DialogTrigger className='text-left'>
                 <ProjectCard item={item} />
               </DialogTrigger>
 
               <DialogContent className='bg-black-100 border border-white/10 text-white max-w-7xl w-[90%] rounded-2xl p-6'>
                 <div className='flex flex-col md:flex-row gap-6'>
-                  <ImageGallery images={item.img} />
+                  <ImageGallery images={item.img} contain={item.imageContain} />
 
                   <div className='flex flex-col flex-1'>
                     <DialogHeader className='space-y-3'>

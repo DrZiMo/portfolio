@@ -7,7 +7,7 @@ export const ImageGallery = ({
   contain,
 }: {
   images: string[]
-  contain: boolean
+  contain?: boolean
 }) => {
   const [active, setActive] = useState<string>(images[0])
 
