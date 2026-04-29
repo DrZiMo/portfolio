@@ -157,7 +157,7 @@ export const projects = [
   {
     id: 3,
     title: 'Guess the Word Game',
-    des: 'A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.',
+    des: 'A real-time 2-player word guessing game where you challenge a friend to decode your secret word before they crack yours, featuring fast-paced interactive gameplay powered by live communication.',
     img: [
       '/guess-main.png',
       'guess  (1).png',

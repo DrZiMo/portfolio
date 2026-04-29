@@ -1,3 +1,5 @@
+'use client'
+
 import { Spotlight } from './ui/spotlight'
 import { cn } from '@/lib/utils'
 import { TextGenerateEffect } from './ui/text-generate-effect'
@@ -7,6 +9,8 @@ import Link from 'next/link'
 import SocialMediaFooter from './SocialMediaFooter'
 import { socialMedia } from '@/data'
 import GradientButton from './GradientButton'
+import { motion } from 'framer-motion'
+import HeroImage from './HeroImage'
 
 const Hero = () => {
   return (
@@ -81,11 +85,7 @@ const Hero = () => {
               </div>
             </div>
             <div className='relative h-full flex items-center shrink-0 lg:w-[35%]'>
-              <img
-                src='/main-img.png'
-                alt='Hero'
-                className='w-full h-auto object-contain'
-              />
+              <HeroImage />
             </div>
           </div>
         </div>
