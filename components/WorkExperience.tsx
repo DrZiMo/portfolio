@@ -24,10 +24,11 @@ const WorkExperience = () => {
                 inactiveZone={0.01}
               />
               <div className='group'>
-                <div className='flex flex-col md:flex-row items-center justify-between'>
-                  <h3 className='text-xl font-semibold mt-3 md:mt-0'>
-                    {item.title}
-                  </h3>
+                <h3 className='text-xl font-semibold mt-3 md:mt-0'>
+                  {item.title}
+                </h3>
+                <div className='flex flex-col md:flex-row items-center justify-between mt-3'>
+                  <h3 className='text-md text-white-100'>{item.role}</h3>
                   <span className='text-xs text-white-100 italic'>
                     {item.date}
                   </span>
