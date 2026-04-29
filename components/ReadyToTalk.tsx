@@ -1,3 +1,5 @@
+'use client'
+
 import { FaExternalLinkAlt, FaPaperPlane } from 'react-icons/fa'
 import MagicButton from './MagicButton'
 import Link from 'next/link'
@@ -11,9 +13,11 @@ import {
 } from './ui/dialog'
 import { socialMedia } from '@/data'
 import SocialMediaFooter from './SocialMediaFooter'
+import { useState } from 'react'
+import { toast } from 'sonner'
 
-// TODO: make the email work
 const ReadyToTalk = () => {
+  const [isLoading, setIsLoading] = useState(false)
   return (
     <section className='pb-20 pt-40' id='contact'>
       <div className='font-bold text-4xl md:text-5xl text-center w-full md:w-[50%] mx-auto'>
@@ -52,17 +56,46 @@ const ReadyToTalk = () => {
               </DialogHeader>
 
               {/* FORM */}
-              <form className='flex flex-col gap-4 mt-4'>
+              <form
+                className='flex flex-col gap-4 mt-4'
+                onSubmit={async (e) => {
+                  e.preventDefault()
+
+                  const formData = new FormData(e.currentTarget)
+
+                  const data = {
+                    name: formData.get('name'),
+                    email: formData.get('email'),
+                    subject: formData.get('subject'),
+                    message: formData.get('message'),
+                  }
+
+                  setIsLoading(true)
+                  const res = await fetch('/api/contact', {
+                    method: 'POST',
+                    body: JSON.stringify(data),
+                  })
+
+                  if (res.ok) {
+                    toast('Message sent!')
+                  } else {
+                    toast('Failed to send message.')
+                  }
+                  setIsLoading(false)
+                }}
+              >
                 <div className='flex flex-col md:flex-row gap-4'>
                   <input
                     type='text'
                     placeholder='Your Name'
+                    name='name'
                     className='flex-1 bg-[#161A31] border border-white/10 rounded-lg px-4 py-2.5 text-sm outline-none focus:border-purple'
                   />
 
                   <input
                     type='email'
                     placeholder='Your Email'
+                    name='email'
                     className='flex-1 bg-[#161A31] border border-white/10 rounded-lg px-4 py-2.5 text-sm outline-none focus:border-purple'
                   />
                 </div>
@@ -70,21 +103,28 @@ const ReadyToTalk = () => {
                 <input
                   type='text'
                   placeholder='Subject'
+                  name='subject'
                   className='bg-[#161A31] border border-white/10 rounded-lg px-4 py-2.5 text-sm outline-none focus:border-purple'
                 />
 
                 <textarea
                   placeholder='Your Message'
                   rows={5}
+                  name='message'
                   className='bg-[#161A31] border border-white/10 rounded-lg px-4 py-2.5 text-sm outline-none focus:border-purple resize-none'
                 />
 
                 {/* BUTTON */}
                 <div className='mx-auto'>
                   <MagicButton
-                    title='Send Message'
+                    title={isLoading ? 'Sending...' : 'Send Message'}
                     icon={<FaPaperPlane />}
                     position='right'
+                    type='submit'
+                    otherClasses={
+                      isLoading ? 'opacity-50 cursor-not-allowed' : ''
+                    }
+                    disabled={isLoading}
                   />
                 </div>
               </form>
