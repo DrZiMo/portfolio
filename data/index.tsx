@@ -190,38 +190,34 @@ export const projects = [
     link: 'https://rock-paper-scissors-weld-three.vercel.app/',
     github: 'https://github.com/DrZiMo/rock-paper-scissors-game',
   },
+  {
+    title: 'Rock Paper Scissors Game',
+    des: 'Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..',
+    img: ['/rbs-main.png', 'rbs (1).png', 'rbs (2).png', 'rbs (3).png'],
+    imageContain: true,
+    iconLists: ['react', 'tailwind', 'typescript', 'vercel'],
+    link: 'https://rock-paper-scissors-weld-three.vercel.app/',
+    github: 'https://github.com/DrZiMo/rock-paper-scissors-game',
+  },
 ]
 
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: 'Michael Johnson',
-    title: 'Director of AlphaStream Technologies',
+      "Suhayb is pro. He converted my Figma design into responsive HTML file, and everything looks perfect\n\nif you're looking for a professional HTML expert, I can vouch for him and will definitely work with him again\nThanks man",
+    name: 'Olorunfemi Abiodun',
+    title: 'Upwork Client',
+  },
+  {
+    quote: 'Joe Farra gave me 5 stars on upwork, ⭐⭐⭐⭐⭐',
+    name: 'Joe Farra',
+    title: 'Upwork Client',
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: 'Michael Johnson',
-    title: 'Director of AlphaStream Technologies',
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: 'Michael Johnson',
-    title: 'Director of AlphaStream Technologies',
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: 'Michael Johnson',
-    title: 'Director of AlphaStream Technologies',
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: 'Michael Johnson',
-    title: 'Director of AlphaStream Technologies',
+      'We are very grateful for the excellent work Suhayb delivered on our project. He was professional, reliable, and paid attention to every detail. The final result exceeded our expectations, and we truly appreciate his dedication.\n\nWe highly recommend him and look forward to working with him again.',
+    name: 'Abdirahman Mahamed',
+    title: 'Administrator, Tacab College',
   },
 ]
 
@@ -291,6 +287,6 @@ export const socialMedia = [
   {
     id: 3,
     icon: <FaWhatsapp />,
-    link: '',
+    link: 'https://wa.me/+252634541983',
   },
 ]
