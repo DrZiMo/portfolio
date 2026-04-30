@@ -328,6 +328,22 @@ export const workExperience = [
     date: 'August 2025 - Present',
     role: 'Frontend Developer',
   },
+  {
+    id: 4,
+    title: 'Open Tarteel',
+    desc: 'Contributed to Open Tarteel, an open-source Progressive Web App for exploring Quran recitations. Improved the frontend by modernizing the UI, enhancing visual consistency, and implementing smoother loading experiences for better usability.',
+    features: [
+      'Search and browse Quran reciters (Qari)',
+      'Play specific ayahs on demand',
+      'Progressive Web App (PWA) with offline support',
+      'Lightweight and fast performance',
+      'Modern and responsive user interface',
+      'Skeleton loading states for smoother UX',
+      'Improved visual consistency and design polish',
+    ],
+    date: 'March 2026',
+    role: 'Frontend Developer',
+  },
 ]
 
 export const socialMedia = [
