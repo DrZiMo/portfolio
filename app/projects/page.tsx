@@ -22,7 +22,7 @@ const page = () => {
           <img src='/pattern.png' alt='pattern' className='h-full' />
         </div>
         <div className='my-5 w-fit'>
-          <Link href={'/'} className={'w-fit'}>
+          <Link href={'/'} className={'w-fit cursor-pointer'}>
             <FaAngleLeft size={23} />
           </Link>
         </div>

@@ -6,6 +6,9 @@ export const SVGs = {
   three: '/three.svg',
   framer: '/fm.svg',
   vercel: '/vercel.svg',
+  github: '/github.svg',
+  api: '/api.svg',
+  sqlite: '/sqlite.svg',
 
   stripe: 'https://www.svgrepo.com/show/354401/stripe.svg',
   redux: 'https://www.svgrepo.com/show/452093/redux.svg',
@@ -13,6 +16,9 @@ export const SVGs = {
   supabase: 'https://www.vectorlogo.zone/logos/supabase/supabase-icon.svg',
   javascript: 'https://www.svgrepo.com/show/349419/javascript.svg',
   socket: 'https://www.svgrepo.com/show/354362/socket.svg',
+  html: 'https://www.svgrepo.com/show/452228/html-5.svg',
+  css: 'https://www.svgrepo.com/show/452185/css-3.svg',
+  go: 'https://www.svgrepo.com/show/452214/go.svg',
 
   gsap: '/gsap.svg',
   zustand:
