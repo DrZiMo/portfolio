@@ -14,7 +14,7 @@ const WorkExperience = () => {
           {workExperience.map((item, index) => (
             <div
               key={`content-${index}`}
-              className='relative flex items-center gap-6 text-sm leading-[1.6] font-normal rounded-2xl border p-5 md:p-10'
+              className='relative flex flex-1 items-center gap-6 text-sm leading-[1.6] font-normal rounded-2xl border p-5 md:p-10'
             >
               <GlowingEffect
                 spread={40}
@@ -49,6 +49,25 @@ const WorkExperience = () => {
                     </li>
                   ))}
                 </ul>
+
+                {item.links?.length > 0 && (
+                  <p className='text-sm mt-4'>
+                    Links:{' '}
+                    {item.links.map((link, index) => (
+                      <span key={link.url}>
+                        <a
+                          href={link.url}
+                          target='_blank'
+                          rel='noopener noreferrer'
+                          className='text-primary hover:underline'
+                        >
+                          {link.label}
+                        </a>
+                        {index < item.links.length - 1 && ', '}
+                      </span>
+                    ))}
+                  </p>
+                )}
               </div>
             </div>
           ))}

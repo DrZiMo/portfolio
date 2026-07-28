@@ -296,6 +296,7 @@ export const workExperience = [
     ],
     date: 'October 2025 – March 2026',
     role: 'Full-stack Developer',
+    links: [],
   },
   {
     id: 2,
@@ -311,6 +312,7 @@ export const workExperience = [
     ],
     date: 'December 2025',
     role: 'Full-stack Developer',
+    links: [],
   },
   {
     id: 3,
@@ -327,6 +329,7 @@ export const workExperience = [
     ],
     date: 'August 2025 - Present',
     role: 'Frontend Developer',
+    links: [],
   },
   {
     id: 4,
@@ -343,6 +346,29 @@ export const workExperience = [
     ],
     date: 'March 2026',
     role: 'Frontend Developer',
+    links: [],
+  },
+  {
+    id: 5,
+    title: 'TikTok',
+    desc: 'Created educational software development content focused on web development, programming, and modern technologies, building a rapidly growing audience with strong engagement in a short period.',
+    features: [
+      'Created educational content covering web development, JavaScript, React, Next.js, Node.js, and software engineering',
+      'Built a rapidly growing audience with high engagement and strong view counts within a short period',
+      'Produced short-form videos simplifying complex programming concepts for developers',
+      'Shared practical coding tips, tutorials, project walkthroughs, and development best practices',
+      'Maintained a consistent content publishing schedule to grow audience reach and retention',
+      'Built a personal brand focused on software development and technology education',
+      'Engaged with the developer community by answering questions and creating content based on audience feedback',
+    ],
+    date: 'November 2025 – Present',
+    role: 'Software Development Content Creator',
+    links: [
+      {
+        label: 'TikTok',
+        url: 'https://www.tiktok.com/@zuhaib.pro?_r=1&_t=ZS-98QATDKsIuA',
+      },
+    ],
   },
 ]
 
