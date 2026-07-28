@@ -24,7 +24,7 @@ const ProjectsPart = ({ full = false }: { full?: boolean }) => {
             <ProjectCard item={item} />
           </DialogTrigger>
 
-          <DialogContent className='bg-black-100 border border-white/10 text-white lg:max-w-7xl w-[90vw] rounded-2xl p-6 max-h-[90vh] overflow-y-auto overflow-hidden'>
+          <DialogContent className='bg-black-100 border border-white/10 text-white lg:max-w-7xl w-[90vw] rounded-2xl p-6 max-h-[90vh] overflow-y-scroll overflow-x-hidden'>
             <div className='flex flex-col lg:flex-row gap-6 w-[calc(90vw-48px)] lg:w-full min-h-0'>
               <ImageGallery
                 images={item.img}
