@@ -1,6 +1,6 @@
 import { projects } from '@/data'
 import React from 'react'
-import { FaGithub, FaLocationArrow } from 'react-icons/fa'
+import { FaGithub, FaLocationArrow, FaVideo } from 'react-icons/fa'
 import {
   Dialog,
   DialogContent,
@@ -78,6 +78,17 @@ const ProjectsPart = ({ full = false }: { full?: boolean }) => {
                     >
                       <span className='text-sm md:text-base'>GitHub</span>
                       <FaGithub className='text-purple' />
+                    </a>
+                  )}
+
+                  {item.video && (
+                    <a
+                      href={item.video}
+                      target='_blank'
+                      className='flex items-center gap-2 bg-[#161A31] hover:bg-[#1d2245] transition px-5 py-2.5 rounded-lg border border-white/10'
+                    >
+                      <span className='text-sm md:text-base'>Video</span>
+                      <FaVideo className='text-purple' />
                     </a>
                   )}
                 </div>

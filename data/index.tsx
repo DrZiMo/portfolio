@@ -125,6 +125,20 @@ export const projects = [
   //   github: '',
   // },
   {
+    title: 'ARMenu - Online Ordering System',
+    des: 'A modern QR code-based restaurant ordering system that lets customers browse digital menus, view dishes as interactive 3D models in augmented reality, and place orders directly from their phones. ARMenu enhances the dining experience by making menu exploration more engaging, informative, and contactless.',
+    img: [
+      '/ARMenu-main.png',
+      '/armenu (1).png',
+      '/armenu (2).png',
+      '/armenu (3).png',
+      '/armenu (4).png',
+    ],
+    iconLists: ['react', 'tailwind', 'typescript', 'mongo', 'express'],
+    imageContain: true,
+    video: 'https://www.tiktok.com/@zuhaib.pro/video/7661315153132080404?is_from_webapp=1&sender_device=pc&web_id=7602210199135602194',
+  },
+  {
     title: 'GiveFlow - Donation Platform',
     des: 'A modern donation platform designed to make giving simple, fast, and transparent. GiveFlow connects donors with causes, enabling seamless contributions and real-time impact tracking.',
     img: [

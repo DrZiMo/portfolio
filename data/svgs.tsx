@@ -9,6 +9,7 @@ export const SVGs = {
   github: '/github.svg',
   api: '/api.svg',
   sqlite: '/sqlite.svg',
+  mongo: '/mongo.svg',
 
   stripe: 'https://www.svgrepo.com/show/354401/stripe.svg',
   redux: 'https://www.svgrepo.com/show/452093/redux.svg',
